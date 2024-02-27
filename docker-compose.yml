@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  bankwebappdocker:
+    image: ${DOCKER_REGISTRY-}bankwebappdocker
+    build:
+      context: .
+      dockerfile: BankWebAppDocker/Dockerfile
